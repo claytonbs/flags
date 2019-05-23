@@ -14,7 +14,7 @@ const RankingForm = props => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3005/api", newEntry);
+      await axios.post("https://flags-api.herokuapp.com/api", newEntry);
 
       props.formSubmit();
     } catch (error) {

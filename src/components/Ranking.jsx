@@ -9,7 +9,7 @@ const Ranking = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get("http://localhost:3005/api");
+        const response = await axios.get("https://flags-api.herokuapp.com/api");
         response.data.sort((a, b) => b.points - a.points);
         response.data.forEach((player, index) => (player.position = index + 1));
         setRanking(response.data);
