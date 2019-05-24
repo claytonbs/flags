@@ -20,7 +20,7 @@ function Game() {
 
   const handleNewGame = () => {
     //reset game states needed for new game
-    setGame({
+    setGame(game => ({
       ...game,
       message: "Which country this flag belongs?",
       rankingSubmitted: false,
@@ -28,7 +28,7 @@ function Game() {
       points: 0,
       userChoice: "",
       choicesList: makeRandomList()
-    });
+    }));
   };
 
   // create a array with a list of 5 random countries
@@ -63,36 +63,40 @@ function Game() {
   // test if the user's answer is correct
   const handleUserChoice = choice => {
     if (choice === game.choicesList.selectedCountry.name) {
-      setGame({
+      setGame(game => ({
         ...game,
         message: "Right answer",
         points: game.points + 1,
         userChoice: choice
-      });
+      }));
     } else {
-      setGame({ ...game, message: "Wrong answer!", userChoice: choice });
+      setGame(game => ({
+        ...game,
+        message: "Wrong answer!",
+        userChoice: choice
+      }));
     }
   };
 
   // handle the button to call the next country
   const handleNextCountry = () => {
     if (game.userChoice === "" && game.round > 0) {
-      setGame({ ...game, message: "You must choose a country" });
+      setGame(game => ({ ...game, message: "You must choose a country" }));
       return;
     }
-    setGame({
+    setGame(game => ({
       ...game,
       message: "Which country this flag belongs?",
       round: game.round + 1,
       userChoice: "",
       choicesList: makeRandomList()
-    });
+    }));
   };
 
   const checkGameOver = () => {
     if (game.round > game.maxRounds) {
       if (game.message !== "Game is over") {
-        setGame({ ...game, message: "Game is over" });
+        setGame(game => ({ ...game, message: "Game is over" }));
       }
       return true;
     }
@@ -106,7 +110,7 @@ function Game() {
           "https://restcountries.eu/rest/v2/all"
         );
 
-        setGame({ ...game, countries: [...response.data] });
+        setGame(game => ({ ...game, countries: [...response.data] }));
       } catch (error) {
         console.error(error);
       }
