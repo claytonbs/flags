@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Spinner from "./Spinner";
 import "./Ranking.scss";
 
 const Ranking = () => {
@@ -84,6 +85,7 @@ const Ranking = () => {
           </li>
         ))}
       </ul>
+      {ranking.length === 0 && <Spinner />}
     </section>
   );
 };
