@@ -21,7 +21,11 @@ const GameActive = ({ data, data: { game } }) => {
         onUserChoice={data.handleUserChoice}
         game={game}
       />
-      <Btn content="Next country" onClick={data.handleNextCountry} />
+      <Btn
+        content="Next country"
+        onClick={data.handleNextCountry}
+        disabled={!game.userChoice}
+      />
     </div>
   );
 };

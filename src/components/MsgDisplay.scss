@@ -12,3 +12,15 @@
     font-size: $medium-font-size;
   }
 }
+
+@media screen and (max-width: 740px) {
+  .msg {
+    &-big {
+      font-size: $medium-font-size;
+    }
+
+    &-medium {
+      font-size: $default-font-size;
+    }
+  }
+}

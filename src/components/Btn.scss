@@ -19,7 +19,7 @@
     border-bottom: 3px solid $color-primary-dark;
   }
 
-  &:hover {
+  &:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 5px 3px $color-dark;
   }
@@ -32,4 +32,9 @@
 
 .left {
   display: inline-block;
+}
+
+.btn-primary:disabled {
+  background-color: $color-background-primary;
+  color: $color-dark;
 }

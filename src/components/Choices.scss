@@ -26,6 +26,11 @@
       color: $color-light;
     }
 
+    &-label-wrong:hover {
+      background-color: transparent;
+      color: #000000;
+    }
+
     &-radio {
       display: none;
     }

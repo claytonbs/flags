@@ -81,10 +81,10 @@ function Game() {
 
   // handle the button to call the next country
   const handleNextCountry = () => {
-    if (game.userChoice === "" && game.round > 0) {
-      setGame(game => ({ ...game, message: "You must choose a country" }));
-      return;
-    }
+    // if (game.userChoice === "" && game.round > 0) {
+    //   setGame(game => ({ ...game, message: "You must choose a country" }));
+    //   return;
+    // }
     setGame(game => ({
       ...game,
       message: "Which country this flag belongs?",
