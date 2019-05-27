@@ -1,11 +1,3 @@
-@import "./components/variables.scss";
-
-body {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-    to bottom right,
-    $color-background-primary,
-    $color-background-secondary
-  );
+.app {
+  height: 100%;
 }

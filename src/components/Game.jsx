@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import Main from "./Main";
 import Ranking from "./Ranking";
 import Spinner from "./Spinner";
+import "./Game.scss";
 
 function Game() {
   const [game, setGame] = useState({
@@ -125,25 +126,23 @@ function Game() {
 
   return (
     <section className="main-game">
-      <div>
-        <Nav onNewGame={handleNewGame} game={game} />
-        <Route
-          exact
-          path="/"
-          component={props => (
-            <Main
-              game={game}
-              handleNewGame={handleNewGame}
-              checkGameOver={checkGameOver}
-              handleNextCountry={handleNextCountry}
-              handleUserChoice={handleUserChoice}
-            />
-          )}
-        />
-        <Route exact path="/ranking" component={Ranking} />
+      <Nav onNewGame={handleNewGame} game={game} />
+      <Route
+        exact
+        path="/"
+        component={props => (
+          <Main
+            game={game}
+            handleNewGame={handleNewGame}
+            checkGameOver={checkGameOver}
+            handleNextCountry={handleNextCountry}
+            handleUserChoice={handleUserChoice}
+          />
+        )}
+      />
+      <Route exact path="/ranking" component={Ranking} />
 
-        {game.countries.length === 0 && <Spinner />}
-      </div>
+      {game.countries.length === 0 && <Spinner />}
     </section>
   );
 }

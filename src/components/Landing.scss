@@ -2,12 +2,12 @@
 
 .landing {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: $color-black;
 
   &__container {
     z-index: 1;
-    height: 100%;
+
     position: relative;
     text-align: center;
     padding-top: 40vh;
@@ -53,7 +53,7 @@
 
   &__slideshow {
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     top: 0;
     left: 0;
     list-style: none;

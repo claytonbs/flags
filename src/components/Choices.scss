@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .choices {
-  margin: 1rem 0 2rem 0;
+  margin: 3rem 0 3rem 0;
 
   &__list {
     display: flex;
@@ -10,12 +10,14 @@
 
     &-li {
       list-style-type: none;
+      z-index: 10;
     }
 
     &-label {
       font-size: $default-font-size;
       cursor: pointer;
       padding: 0.5rem 0.7rem;
+      border: 1px solid $color-primary;
       border-radius: 3px;
     }
 
@@ -41,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 740px) {
   .choices__list {
     flex-direction: column;
 

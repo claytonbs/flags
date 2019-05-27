@@ -19,7 +19,7 @@ const GameOver = ({ data, data: { game } }) => {
   };
 
   return (
-    <React.Fragment>
+    <div className="main">
       <MsgDisplay
         message={`You made ${game.points} of ${game.maxRounds} points`}
         size="medium"
@@ -45,7 +45,7 @@ const GameOver = ({ data, data: { game } }) => {
           />
         )}
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
