@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
+import Btn from "./Btn";
 import Spinner from "./Spinner";
 import "./Ranking.scss";
 
@@ -86,6 +88,9 @@ const Ranking = () => {
         ))}
       </ul>
       {ranking.length === 0 && <Spinner />}
+      <NavLink to="/">
+        <Btn content="Back to the game" align="left" />
+      </NavLink>
     </section>
   );
 };

@@ -1,12 +1,16 @@
 import React from "react";
 import "./Spinner.scss";
 
-const Spinner = () => {
+const Spinner = props => {
   return (
     <div className="spinner">
       <div className="spinner-container" />;
-      <p className="spinner-caption">Loading...</p>
+      <p className="spinner-caption">{props.message}</p>
     </div>
   );
 };
 export default Spinner;
+
+Spinner.defaultProps = {
+  message: "Loading..."
+};

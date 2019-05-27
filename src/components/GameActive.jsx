@@ -15,14 +15,13 @@ const GameActive = ({ data, data: { game } }) => {
         size="medium"
       />
       <MsgDisplay message={game.message} size="big" />
-
+      <ShowFlag flag={game.choicesList.selectedCountry.flag} />
       <Choices
         checkGameOver={data.checkGameOver}
         onUserChoice={data.handleUserChoice}
         game={game}
       />
       <Btn content="Next country" onClick={data.handleNextCountry} />
-      <ShowFlag flag={game.choicesList.selectedCountry.flag} />
     </div>
   );
 };

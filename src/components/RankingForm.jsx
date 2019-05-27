@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 import Btn from "./Btn";
+import Spinner from "./Spinner";
 import "./RankingForm.scss";
-import { NavLink } from "react-router-dom";
 
 const RankingForm = props => {
   const [newEntry, setNewEntry] = useState({
@@ -10,9 +11,11 @@ const RankingForm = props => {
     lastName: "",
     points: props.game.points
   });
+  const [sendingForm, setSendingForm] = useState(false);
 
   const handleSubmit = async e => {
     e.preventDefault();
+    setSendingForm(true);
     try {
       await axios.post("https://flags-api.herokuapp.com/api", newEntry);
 
@@ -76,7 +79,11 @@ const RankingForm = props => {
               Last Name
             </label>
           </div>
-          <Btn align="left" content="Enter for the history!" />
+          {sendingForm ? (
+            <Spinner message="Sending..." />
+          ) : (
+            <Btn align="left" content="Enter for the history!" />
+          )}
         </form>
       </div>
     );
