@@ -1,12 +1,3 @@
-@import "./variables.scss";
-
 .main-game {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-    to bottom right,
-    $color-background-primary,
-    $color-background-secondary
-  );
   height: 100%;
 }

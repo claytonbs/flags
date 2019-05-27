@@ -6,13 +6,13 @@ import "./Main.scss";
 
 const Main = props => {
   return (
-    <div>
+    <React.Fragment>
       {props.checkGameOver() ? (
         <GameOver data={props} />
       ) : (
         <GameActive data={props} />
       )}
-    </div>
+    </React.Fragment>
   );
 };
 
