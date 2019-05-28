@@ -1,5 +1,22 @@
 This is is a game made with React Hooks without any class.
  
+ ## Components Structure <br />
+ 
+	                  APP<br />
+             _______|_______<br />
+             |             |<br />
+          Landing         Game<br />
+                           |<br />
+                 Nav----- Main------ Ranking<br />
+                     _______|_______  <br />
+                     |              |<br />
+                GameActive       GameOver <br />
+                _____|_____          |<br />
+                |          |    RankingForm<br />
+           ShowFlag     Choices <br />
+                     
+                     
+ 
  
  ## Reusable Components <br />
  
