@@ -1,4 +1,4 @@
-This is a game made with React Hooks without any class.
+## This is a game made with React Hooks without any class.
 
 ## Components Structure
             APP
