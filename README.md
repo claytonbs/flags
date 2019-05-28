@@ -1,17 +1,4 @@
 ## This is a game made with React Hooks without any class.
-
-## Components Structure
-            APP
-          ___|___
-          |     |
-     Landing   Game
-                |
-Ranking------- Main--------- Nav
-          ______|__________
-          |               |    
-     GameActive       GameOver                 
-         |                |
- Choices--ShowFlag    RankinForm
  
  
  ## Reusable Components
