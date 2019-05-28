@@ -4,13 +4,13 @@ This is is a game made with React Hooks without any class.
  ## Reusable Components <br />
  
  BTN  <br />
- A customizble button <br />
+ A customizable button <br />
  PROPS  <br />
  Message: the content to be displayed <br />
  align: Left or center <br />
  disable: a condition to disable the button if needed <br />
  
- SPINNER <br />
+ LOADING SPINNER <br />
  A wheel that spins to show a action in progress <br />
  PROPS: <br />
  Message: the content to be displayed inside de spinner <br />
