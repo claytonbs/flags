@@ -1,25 +1,25 @@
-## This is a game made with React Hooks without any class.
+This is is a game made with React Hooks without any class.
  
  
- ## Reusable Components
+ ## Reusable Components <br />
  
- BTN 
- A customizble button
- PROPS
- Message: the content to be displayed
- align: Left or center
- disable: a condition to disable the button if needed
+ BTN  <br />
+ A customizble but <br />ton <br />
+ PROPS  <br />
+ Message: the content to be displayed <br />
+ align: Left or center <br />
+ disable: a condition to disable the button if needed <br />
  
- SPINNER
- A wheel that spins to show a action in progress
- PROPS:
- Message: the content to be displayed inside de spinner
+ SPINNER <br />
+ A wheel that spins to show a action in progress <br />
+ PROPS: <br />
+ Message: the content to be displayed inside de spinner <br />
  
- MSGDISPLAY
- A component that shows a message to the user
- PROPS:
- Message: The content to be displayed:
- Size: Can be "big" or "medium" 
+ MSGDISPLAY <br />
+ A component that shows a message to the user <br />
+ PROPS: <br />
+ Message: The content to be displayed: <br />
+ Size: Can be "big" or "medium"  <br />
  
  ## Libraries
  React, React-Router and React-Dom
