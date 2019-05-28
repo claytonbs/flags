@@ -2,7 +2,7 @@ This is is a game made with React Hooks without any class.
  
  ## Components Structure <br />
  
-	            APP
+	           APP
              _______|_______
              |             |
           Landing         Game
@@ -13,12 +13,10 @@ This is is a game made with React Hooks without any class.
                 GameActive       GameOver 
                 _____|_____          |
                 |          |    RankingForm
-           ShowFlag     Choices <br />
+           ShowFlag     Choices 
                      
                      
- 
- 
- ## Reusable Components <br />
+  ## Reusable Components <br />
  
  BTN  <br />
  A customizable button <br />
