@@ -2,7 +2,7 @@ This is is a game made with React Hooks without any class.
  
  ## Components Structure <br />
  
-	           APP
+	               APP
              _______|_______
              |             |
           Landing         Game
