@@ -4,7 +4,7 @@ This is is a game made with React Hooks without any class.
  ## Reusable Components <br />
  
  BTN  <br />
- A customizble but <br />ton <br />
+ A customizble button <br />
  PROPS  <br />
  Message: the content to be displayed <br />
  align: Left or center <br />
