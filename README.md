@@ -1,3 +1,49 @@
+This is a game made with React Hooks without any class.
+
+## Components Structure
+            APP
+          ___|___
+          |     |
+     Landing   Game
+                |
+Ranking------- Main--------- Nav
+          ______|__________
+          |               |    
+     GameActive       GameOver                 
+         |                |
+ Choices--ShowFlag    RankinForm
+ 
+ 
+ ## Reusable Components
+ 
+ BTN 
+ A customizble button
+ PROPS
+ Message: the content to be displayed
+ align: Left or center
+ disable: a condition to disable the button if needed
+ 
+ SPINNER
+ A wheel that spins to show a action in progress
+ PROPS:
+ Message: the content to be displayed inside de spinner
+ 
+ MSGDISPLAY
+ A component that shows a message to the user
+ PROPS:
+ Message: The content to be displayed:
+ Size: Can be "big" or "medium" 
+ 
+ ## Libraries
+ React, React-Router and React-Dom
+ Axios
+ Node-sass
+ 
+ APi For Countries flags and info:
+ https://restcountries.eu
+ 
+ 
+ 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
