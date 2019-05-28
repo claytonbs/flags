@@ -8,7 +8,7 @@ This is is a game made with React Hooks without any class.
           Landing         Game
                            |
                  Nav----- Main------ Ranking
-                     _______|_______  
+                     ______|_________  
                      |              |
                 GameActive       GameOver 
                 _____|_____          |
